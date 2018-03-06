@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context="com.example.sagar.weather_application.MainActivity">
+
+    <EditText
+        android:id="@+id/input_query"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:hint="Enter the Query"
+        android:textSize="20dp"/>
+
+
+    <TextView
+        android:id="@+id/show_query"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:textSize="20dp"
+        android:hint="Click on GITHUB QUERY to see the result"
+        />
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:textAppearance="@color/colorPrimaryDark"
+            android:id="@+id/error_message"
+            android:layout_width="match_parent"
+            android:textSize="20dp"
+            android:visibility="invisible"
+            android:text="@string/error_message"
+            android:layout_height="wrap_content" />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:textAppearance="@color/colorPrimaryDark"
+                android:textSize="20dp"
+                android:id="@+id/query_output"
+                android:layout_width="match_parent"
+                android:padding="16dp"
+                android:layout_height="wrap_content"
+                android:gravity="center" />
+        </ScrollView>
+        <ProgressBar
+            android:id="@+id/loading_progress"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:visibility="invisible"
+            android:layout_gravity="center"/>
+    </FrameLayout>
+
+</LinearLayout>

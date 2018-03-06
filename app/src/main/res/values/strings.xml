@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Weather_Application</string>
+    <string name="error_message">Failed to get the result,Please try again.</string>
+</resources>
